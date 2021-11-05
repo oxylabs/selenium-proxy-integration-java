@@ -19,7 +19,7 @@ integrated with Selenium using Java.
 
 To make this easier, this code
 uses [BrowserMob Proxy](https://github.com/lightbody/browsermob-proxy) as a middle layer. This
-proxy runs locally in JVM and allows chaining of Oxyalabs' authenticated proxies.
+proxy runs locally in JVM and allows chaining of Oxylabs' authenticated proxies.
 
 If you are using Maven, add this dependency to the `pom.xml` file:
 
