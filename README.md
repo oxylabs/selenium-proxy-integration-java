@@ -64,7 +64,8 @@ You shouldn’t include the prefix `customer-` in the `USERNAME.` This will be a
 
 ## Testing Proxy Connection
 
-Open this project in IDE, open the ProxyDemo.java file, and run the `main()` function. This will print two IP addresses.
+Open this project in IDE, open the [ProxySetup.java](src/main/java/ProxySetup.java) file, and run the `main()` function. 
+This will print two IP addresses.
 
 - The first IP address will be completely random;
 - The second IP address will be a country-specific IP address in Germany.
@@ -78,7 +79,7 @@ countrySpecificIPDemo("DE");
 ```
 
 The value of this parameter is a case-insensitive country code in two-letter [3166-1 alpha-2 format](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). For example, `DE` for 
-Germany, `GB` for the United Kingdom, etc. For more details, see Oxylabs’[documentation](https://developers.oxylabs.io/residential-proxies/?java#select-country).
+Germany, `GB` for the United Kingdom, etc. For more details, see Oxylabs’ [documentation](https://developers.oxylabs.io/residential-proxies/?java#select-country).
 
 ## Understanding the Code
 
@@ -89,7 +90,7 @@ In most cases, you should be able to use this file directly without any change.
 
 To create a Chrome Driver instance, go through a two-step process as follows:
 
-First, create an instance of `BrowserMobProxyServer.` This is where you need to provide the proxy endpoint, username, and password.
+First, create an instance of `BrowserMobProxyServer`. This is where you need to provide the proxy endpoint, username, and password.
 
 The fourth parameter is a two-letter country code. If you don’t need a country-specific proxy, set it to `null`:
 
@@ -103,7 +104,7 @@ BrowserMobProxyServer proxy=ProxyHelper.getProxy(
 
 Next, call the `ProxyHelper.getDriver()` function.
 
-This function takes up two parameters--`BrowserMobProxyServer` and a `boolean` headless. To run the browser in headless mode, send `true`:
+This function takes up two parameters -`BrowserMobProxyServer` and a `boolean` headless. To run the browser in headless mode, send `true`:
 
 ```java
 WebDriver driver=ProxyHelper.getDriver(proxy,true);
