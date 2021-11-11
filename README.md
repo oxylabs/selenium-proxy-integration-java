@@ -16,6 +16,11 @@ language can be challenging.
 This tutorial contains complete code demonstrating how [Oxylabs’ Residential Proxies](https://oxylabs.io/products/residential-proxy-pool) can be 
 easily integrated with Selenium using Java. 
 
+## Prerequisites
+
+- Download and install [Maven](https://maven.apache.org/download.cgi).
+- Download and install [Java SE Development Kit](https://www.oracle.com/java/technologies/downloads/).
+
 ## Requirements
 
 To make this integration easier, we used [BrowserMob Proxy](https://github.com/lightbody/browsermob-proxy) 
@@ -120,6 +125,33 @@ Before exiting, remember to close the driver and stop the proxy:
 driver.quit();
 proxy.stop(); 
 ```
+
+## Running the Code
+
+### Compiling the Source Code
+
+This is a maven project. To compile this project, run the following command from terminal:
+
+```shell
+mvn clean package
+```
+
+This will create the file `oxylabs.io-jar-with-dependencies.jar` in the `target` folder.
+
+### Running the Jar
+
+To run the jar, execute the following command from the terminal:
+
+```shell
+java -cp target/oxylabs.io-jar-with-dependencies.jar io.oxylabs.ProxyDemo
+```
+
+This will run the code and print two IP address.
+
+Additionally, there will be log messages printed.
+
+- The first IP will be a random IP
+- The second IP will be an IP in Germany
 
 If you're having any trouble integrating Oxylabs’ Residential Proxies with Selenium and this guide didn't help you – feel free to contact our customer support at support@oxylabs.io.
 
