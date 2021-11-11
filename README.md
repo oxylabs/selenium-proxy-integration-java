@@ -13,7 +13,7 @@
 Integrating proxies that need authorization using the Selenium framework and Java programming 
 language can be challenging. 
 
-This tutorial contains complete code demonstrating how Oxylabs’ Residential Proxies can be 
+This tutorial contains complete code demonstrating how [Oxylabs’ Residential Proxies](https://oxylabs.io/products/residential-proxy-pool) can be 
 easily integrated with Selenium using Java. 
 
 ## Requirements
