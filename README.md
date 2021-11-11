@@ -10,13 +10,17 @@
 
 ## Introduction
 
-Integrating proxies that need authorization using the Selenium framework and Java programming language can be challenging. 
+Integrating proxies that need authorization using the Selenium framework and Java programming 
+language can be challenging. 
 
-This tutorial contains complete code demonstrating how Oxylabs’ Residential Proxies can be easily integrated with Selenium using Java. 
+This tutorial contains complete code demonstrating how Oxylabs’ Residential Proxies can be 
+easily integrated with Selenium using Java. 
 
 ## Requirements
 
-To make this integration easier, we used BrowserMob Proxy as a middle layer. It runs proxies locally in JVM and allows chaining of Oxylabs' authenticated proxies. If you’re using Maven, add this dependency to the `pom.xml` file:
+To make this integration easier, we used [BrowserMob Proxy](https://github.com/lightbody/browsermob-proxy) 
+as a middle layer. It runs proxies locally in JVM and allows chaining of Oxylabs' authenticated proxies. 
+If you’re using Maven, add this dependency to the `pom.xml` file:
 
 ```xml
 
@@ -27,8 +31,9 @@ To make this integration easier, we used BrowserMob Proxy as a middle layer. It 
 </dependency>
 ```
 
-The other library used in this project – WebDriverManager, is optional. It just makes downloading and setting up Chrome Driver easier. 
-To use this library, include the following dependency in `pom.xml` file:
+The other library used in this project – [WebDriverManager](https://github.com/bonigarcia/webdrivermanager), 
+is optional. It just makes downloading and setting up [Chrome Driver](https://chromedriver.chromium.org/downloads) 
+easier. To use this library, include the following dependency in `pom.xml` file:
 
 ```xml
 
@@ -72,7 +77,8 @@ Open [ProxyDemo.java](src/main/java/ProxyDemo.java) file and send a two-letter c
 countrySpecificIPDemo("DE");
 ```
 
-The value of this parameter is a case-insensitive country code in two-letter 3166-1 alpha-2 format. For example, `DE` for Germany, `GB` for the United Kingdom, etc. For more details, see Oxylabs’ documentation. 
+The value of this parameter is a case-insensitive country code in two-letter [3166-1 alpha-2 format](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). For example, `DE` for 
+Germany, `GB` for the United Kingdom, etc. For more details, see Oxylabs’[documentation](https://developers.oxylabs.io/residential-proxies/?java#select-country).
 
 ## Understanding the Code
 
