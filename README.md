@@ -55,6 +55,26 @@ If you don’t want to use WebDriverManager, download the Chrome Driver and set 
 System.setProperty("webdriver.chrome.driver","/path/to/chromedriver");
 ```
 
+## Running the Code
+
+### Compiling the Source Code
+
+This is a maven project. To compile this project, run the following command from terminal:
+
+```shell
+mvn clean package
+```
+
+This will create the file `oxylabs.io-jar-with-dependencies.jar` in the `target` folder.
+
+### Running the Jar
+
+To run the jar, execute the following command from the terminal:
+
+```shell
+java -cp target/oxylabs.io-jar-with-dependencies.jar io.oxylabs.ProxyDemo
+```
+
 ## Proxy Authentication
 
 Open [ProxySetup.java](src/main/java/ProxySetup.java) file and update your username, password, and endpoint.
@@ -125,27 +145,5 @@ Before exiting, remember to close the driver and stop the proxy:
 driver.quit();
 proxy.stop(); 
 ```
-
-## Running the Code
-
-### Compiling the Source Code
-
-This is a maven project. To compile this project, run the following command from terminal:
-
-```shell
-mvn clean package
-```
-
-This will create the file `oxylabs.io-jar-with-dependencies.jar` in the `target` folder.
-
-### Running the Jar
-
-To run the jar, execute the following command from the terminal:
-
-```shell
-java -cp target/oxylabs.io-jar-with-dependencies.jar io.oxylabs.ProxyDemo
-```
-
-This will run the code and print two IP address.
 
 If you're having any trouble integrating Oxylabs’ Residential Proxies with Selenium and this guide didn't help you – feel free to contact our customer support at support@oxylabs.io.
