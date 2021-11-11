@@ -148,10 +148,4 @@ java -cp target/oxylabs.io-jar-with-dependencies.jar io.oxylabs.ProxyDemo
 
 This will run the code and print two IP address.
 
-Additionally, there will be log messages printed.
-
-- The first IP will be a random IP
-- The second IP will be an IP in Germany
-
 If you're having any trouble integrating Oxylabs’ Residential Proxies with Selenium and this guide didn't help you – feel free to contact our customer support at support@oxylabs.io.
-
