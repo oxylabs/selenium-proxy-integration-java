@@ -20,6 +20,7 @@ easily integrated with Selenium using Java.
 
 - Download and install [Maven](https://maven.apache.org/download.cgi).
 - Download and install [Java SE Development Kit](https://www.oracle.com/java/technologies/downloads/).
+- Download and install [Google Chrome](https://www.google.com/chrome).
 
 ## Requirements
 
