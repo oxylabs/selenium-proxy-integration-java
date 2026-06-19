@@ -117,7 +117,7 @@ countrySpecificIPDemo("DE");
 ```
 
 The value of this parameter is a case-insensitive country code in two-letter [3166-1 alpha-2 format](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). For example, `DE` for 
-Germany, `GB` for the United Kingdom, etc. For more details, see Oxylabs’ [documentation](https://developers.oxylabs.io/proxies/residential-proxies/select-country#code-example).
+Germany, `GB` for the United Kingdom, etc. For more details, see Oxylabs’ [documentation](https://developers.oxylabs.io/products/proxies/residential-proxies/location-settings/select-country).
 
 ## SSL Support
 
